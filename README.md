@@ -1,8 +1,13 @@
-# 🔐 RSA Encryption Tool
+# 🔐 Protector de NIP con RSA
 
-Un proyecto interactivo que implementa el algoritmo de encriptación RSA usando Electron, Node.js.
+¡Bienvenido al repositorio de **Protector de NIP con RSA**! Una aplicación desarrollada con Electron que demuestra el cifrado asimétrico RSA para proteger números de identificación personal (NIP) de tarjetas de crédito.
 
-![RSA Demo](https://via.placeholder.com/800x400?text=RSA+Encryption+Demo)
+## 🚀 Características
+
+- Generación de claves RSA (pública/privada) de 2048 bits
+- Cifrado y descifrado de NIP de 4 dígitos
+- Interfaz simulando una tarjeta de crédito interactiva
+- Consola de operaciones para visualizar el proceso criptográfico
 
 ## 📦 Dependencias Requeridas
 
@@ -20,17 +25,31 @@ Un proyecto interactivo que implementa el algoritmo de encriptación RSA usando 
 - `tailwindcss`: ^3.4.0
 - `crypto-js`: ^4.1.1
 
-## 🚀 Instalación
+### Bibliotecas de Criptografía
+- `jsencrypt` `^3.3.2` (Implementación RSA)
+- `crypto-js` `^4.1.1` (Opcional para hashing)
+
+🌟 ¿Por qué este proyecto?
+
+📝 Licencia
+
+MIT License - Libre para uso y modificación
+👥 Contribuciones
+
+¡Se aceptan PRs! Reporta issues si encuentras bugs o mejoras de seguridad.
+
+🤖 Tecnologías usadas
+
+    JavaScript
+
+    HTML5
+
+    CSS3
+
+## 🛠️ Instalación
 
 1. Clona el repositorio:
 ```bash
-git clone https://github.com/tu-usuario/rsa-electron-tool.git
-cd rsa-electron-tool
+git clone https://github.com/tuusuario/protector-nip-rsa.git
 
-## ✨ Características Principales
 
-### 🔑 Generación de Claves RSA
-```javascript
-const { generateKeyPair } = require('node-rsa');
-// Ejemplo: Generación de claves 2048-bit
-const key = new NodeRSA({ b: 2048 });
