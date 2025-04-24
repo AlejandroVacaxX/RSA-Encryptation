@@ -1,6 +1,6 @@
 # 🔐 RSA Encryption Tool
 
-Un proyecto interactivo que implementa el algoritmo de encriptación RSA usando Electron, Node.js y DeepSeek.
+Un proyecto interactivo que implementa el algoritmo de encriptación RSA usando Electron, Node.js.
 
 ![RSA Demo](https://via.placeholder.com/800x400?text=RSA+Encryption+Demo)
 
@@ -9,7 +9,6 @@ Un proyecto interactivo que implementa el algoritmo de encriptación RSA usando 
 ### Core
 - `electron`: ^28.0.0
 - `node-rsa`: ^1.1.1
-- `deepseek`: ^2.3.0 (API para integraciones avanzadas)
 
 ### Desarrollo
 - `electron-builder`: ^24.9.1
