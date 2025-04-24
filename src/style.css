@@ -1,0 +1,151 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #0b316c 0%, #76da92 100%);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+/* Tarjeta de Crédito */
+.credit-card {
+    background: linear-gradient(45deg, #1a2980, #26d0ce);
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin-bottom: 30px;
+    transition: transform 0.3s;
+}
+
+.credit-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-logo {
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.5em;
+    opacity: 0.8;
+}
+
+.card-number {
+    font-size: 1.4em;
+    letter-spacing: 2px;
+    margin: 20px 0;
+    font-family: 'Courier New', monospace;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.card-nip {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+    font-size: 1.1em;
+}
+
+.card-chip {
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(45deg, #ffd700, #e5c100);
+    border-radius: 5px;
+    position: absolute;
+    top: 50px;
+}
+
+.card-status {
+    text-align: right;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+/* Teclado */
+.keypad {
+    margin-top: 20px;
+}
+
+.keypad-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.key {
+    width: 60px;
+    height: 60px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 50%;
+    background: #2c3e50;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.key:hover {
+    background: #34495e;
+    transform: scale(1.05);
+}
+
+.key:active {
+    transform: scale(0.95);
+}
+
+#clearBtn {
+    background: #e74c3c;
+}
+
+#enterBtn {
+    background: #2ecc71;
+}
+
+.console {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: left;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    max-height: 250px;  /* Aumenté la altura */
+    overflow-y: auto;
+    width: 550px;
+    
+    /* Mantén el contenido alineado verticalmente */
+    display: block; /* Elimina el flex para alinear los <pre> correctamente */
+}
+
+/* Opcional: Estilo para los elementos <pre> dentro de .console */
+.console pre {
+    margin: 5px 0;
+    white-space: pre-wrap; /* Para que el texto largo se ajuste */
+}

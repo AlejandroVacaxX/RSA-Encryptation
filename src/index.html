@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protector de NIP - RSA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>🔒 Protector de NIP con RSA</h1>
+        
+        <!-- Tarjeta de Crédito -->
+        <div class="credit-card" id="creditCard">
+            <div class="card-logo">Master Card</div>
+            <div class="card-number">•••• •••• •••• 4242</div>
+            <div class="card-info">
+                <span class="card-name">Alejandro Vaca</span>
+                <span class="card-expiry">12/25</span>
+            </div>
+            <div class="card-nip" id="cardNip">NIP: 🔒🔒🔒🔒</div>
+            <div class="card-chip"></div>
+            <div class="card-status" id="cardStatus">Listo</div>
+        </div>
+
+        <!-- Teclado Numérico -->
+        <div class="keypad">
+            <div class="keypad-row">
+                <button class="key" data-number="1">1</button>
+                <button class="key" data-number="2">2</button>
+                <button class="key" data-number="3">3</button>
+            </div>
+            <div class="keypad-row">
+                <button class="key" data-number="4">4</button>
+                <button class="key" data-number="5">5</button>
+                <button class="key" data-number="6">6</button>
+            </div>
+            <div class="keypad-row">
+                <button class="key" data-number="7">7</button>
+                <button class="key" data-number="8">8</button>
+                <button class="key" data-number="9">9</button>
+            </div>
+            <div class="keypad-row">
+                <button class="key" id="clearBtn">C</button>
+                <button class="key" data-number="0">0</button>
+                <button class="key" id="enterBtn">✔</button>
+            </div>
+        </div>
+
+        <!-- Consola de Operación -->
+        <div class="console">
+            <pre id="rsaKeys">Llaves RSA: (generadas al ingresar NIP)</pre>
+            <pre id="encryptedNip">NIP cifrado: </pre>
+            <pre id="decryptedNip">NIP descifrado: </pre>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsencrypt/3.3.2/jsencrypt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
