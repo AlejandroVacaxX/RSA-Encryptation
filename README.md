@@ -29,7 +29,7 @@
 - `jsencrypt` `^3.3.2` (Implementación RSA)
 - `crypto-js` `^4.1.1` (Opcional para hashing)
 
-🌟 ¿Por qué este proyecto?
+
 
 📝 Licencia
 
